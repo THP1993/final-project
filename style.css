@@ -89,6 +89,16 @@ button {
     border: none;
 }
 
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+}
+
+
 /* 
 
 NAVBAR ↓
@@ -336,6 +346,10 @@ FEATURES ↓
 
 */
 
+.feature {
+    width: 100%;
+}
+
 .feature__text {
     margin-top: 8px;
     margin-left: 16px;
@@ -373,16 +387,7 @@ FEATURES ↓
     text-transform: uppercase;
 }
 
-.section__title {
-    font-size: 48px;
-    font-weight: 900;
-    color: rgb(36, 62, 99);
-    line-height: 1.5;
-    margin: 16px 0;
-    letter-spacing: .025em;
 
-
-}
 
 .section__para {
     font-size: 18px;
@@ -488,14 +493,6 @@ STEPS ↓
     z-index: 2;
 }
 
-.section__title {
-    font-size: 48px;
-    font-weight: 900;
-    color: rgb(36, 62, 99);
-    line-height: 1.5;
-    margin: 16px 0;
-    letter-spacing: 0.025em;
-}
 
 .step__title {
     font-weight: 600;
@@ -565,9 +562,23 @@ VALUES ↓
     align-items: center;
 }
 
+.value {
+margin-top: 2rem;
+margin-right: 2rem;
+align-items: flex-start;
+display: flex;
+flex-direction: column;
+}
+
+
 .values__img,
 .values__description {
     width: 50%;
+}
+
+
+#values .btn {
+    margin-top: 48px;
 }
 
 .value__img {
@@ -902,6 +913,7 @@ TESTIMONIALS ↓
     color: #7c8ba1;
     font-weight: 500;
     line-height: 1.5;
+    padding-left: 24px;
 }
 
 .testimonial__name {
@@ -909,6 +921,7 @@ TESTIMONIALS ↓
     line-height: 1.625;
     font-size: 1.25rem;
     font-weight: 700;
+    padding-left: 24px;
 }
 
 .testimonial__buttons {
@@ -944,6 +957,12 @@ TESTIMONIALS ↓
     font-size: 16px;
     color: rbg(74, 85, 104)
 }
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
 /* 
 
 START / CALL TO ACTION ↓
@@ -951,7 +970,7 @@ START / CALL TO ACTION ↓
 */
 
 .start__container {
-    padding: 96px;
+    padding: 96px 0;
     width: 100%;
     background-color: rgb(100, 21, 255);
     border-radius: 8px;
@@ -1314,14 +1333,14 @@ MOBILE RESPONSIVENESS ↓
 
 
 
-        .header__description {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .header__description {
+    text-align: center;
+    display: flex;
+     flex-direction: column;
+    align-items: center;
     }
 
-        .header__description, .header__img--wrapper {
+     .header__description, .header__img--wrapper {
         width: 100%;
         max-width: 512px;
         margin: 0 auto;
@@ -1333,6 +1352,31 @@ MOBILE RESPONSIVENESS ↓
     }
 .plan {
     margin-right: 0px;
+}
+
+    .steps__grid {
+        height: 5rem;
+        width: 5rem;
+        bottom: -50px;
+    }
+
+    .start__buttons {
+        width: auto;
+        margin-top: 24px;
+    }
+
+.start__title {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+}
+
+.start__row {
+    flex-direction: column;
+}
+
+.start__button {
+    padding: 16px 32px;
 }
 
 }
@@ -1356,7 +1400,7 @@ MOBILE RESPONSIVENESS ↓
 }
 
 .feature {
-    width: auto;
+    width: 100%;
     max-width: 384px;
 }
 
@@ -1385,6 +1429,53 @@ MOBILE RESPONSIVENESS ↓
     text-align: center;
 }
 
+.step {
+    flex-direction: column;
+    align-items: center;
+}
+
+#steps .row {
+    flex-direction: column;
+}
+
+
+    .values__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .value:nth-of-type(1){
+        margin-right: 0px;
+    }
+
+.value {
+    align-items: center;
+    margin-right: 0px;
+}
+
+
+.footer__columns {
+    justify-content: flex-start;
+}
+
+.footer__column {
+    width: calc(100% / 3);
+}
+
+.footer__bottom {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__copyright {
+    margin-top: 32px;
+}
+
+.footer__socials {
+    margin-top: 32px;
+    margin-left: 0px;
+}
 
 
 }
@@ -1402,5 +1493,25 @@ MOBILE RESPONSIVENESS ↓
     }
     main {
         margin-bottom: 80px;
+    }
+
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .heaer__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
     }
 }
