@@ -336,6 +336,11 @@ FEATURES ↓
 
 */
 
+.feature__text {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
 
 #features {
     position: relative;
