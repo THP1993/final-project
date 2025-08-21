@@ -52,9 +52,7 @@ a {
     display: inline;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 
 h1{
     font-size: 48px;
@@ -141,17 +139,23 @@ nav {
     cursor: pointer;
 }
 
+.nav__link:hover:after {
+    opacity: 1;
+     
+}
+
 .nav__link:after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -6px;
-    height: 2px;
+    bottom: 18px;
+    height: 3px;
     width: 100%;
     background: #6415ff;
     transition: all 300ms ease;
     opacity: 0;
 }
+
 
 .nav__row {
     display: flex;
