@@ -1605,10 +1605,7 @@ MOBILE RESPONSIVENESS ↓
         line-height: 1;
     }
 
-    .testimonial__img {
-        height: 64px;
-        width: 64px;
-    }
+
 
     .testimonial__bottom {
         flex-direction: column;
